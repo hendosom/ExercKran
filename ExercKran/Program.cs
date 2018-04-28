@@ -1,16 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ExercKran
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Der Haupteinstiegspunkt für die Anwendung.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            // test
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
